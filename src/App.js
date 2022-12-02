@@ -2,7 +2,12 @@ import logo from './logo.svg';
 import './App.css';
 import axios from "axios";
 import {useState, useEffect} from 'react';
-import Card from "./card.js";
+import MediaCard from "./Recetas/cardItem.js";
+import Navbar from './Navbar/Navbar';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import RecetasList from './Recetas/recetaslist';
+import Home from './Home/Home';
+import TuMenu from './Tu menú/TuMenu';
 
 function App() {
   const [meal, setMeal] = useState([])
@@ -18,7 +23,14 @@ function App() {
 
   return (
     <div>
-      <Card key={meal.idMeal} img={meal.strMealThumb} meal={meal.strMeal} description={meal.strInstructions}/>
+      <Router>
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/recetas" element={<RecetasList/>}/>
+        <Route path="/tumenu" element={<TuMenu/>}/>
+      </Routes>
+      </Router>
     </div>
   );
 }
