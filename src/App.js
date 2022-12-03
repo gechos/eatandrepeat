@@ -1,15 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
-import axios from "axios";
-import {useState, useEffect} from 'react';
-import MediaCard from "./Recetas/cardItem.js";
+//import axios from "axios";
+//import {useState, useEffect} from 'react';
+//import MediaCard from "./Recetas/cardItem.js";
 import Navbar from './Navbar/Navbar';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { BrowserRouter as Route, Router, Routes} from 'react-router-dom';
+//import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import RecetasList from './Recetas/recetaslist';
 import Home from './Home/Home';
 import TuMenu from './Tu menú/TuMenu';
+//import {CarouselHome} from './Components/CarouselHome';
+
 
 function App() {
+/*
   const [meal, setMeal] = useState([])
 
   useEffect(() => {
@@ -19,12 +22,13 @@ function App() {
       console.log(respMeal.data.meals[0])
     }
     getMealData();
-  }, []);
+  }, []);*/
 
   return (
     <div>
       <Router>
       <Navbar/>
+     
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/recetas" element={<RecetasList/>}/>
@@ -36,7 +40,3 @@ function App() {
 }
 
 export default App;
-/* 
-{Object.keys(meal).map((key) => 
-  <Dog ={key}
-      subBreed={dogs[key]}/>)} */
