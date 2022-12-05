@@ -1,13 +1,17 @@
 import React from 'react'
-import RecetasHome from '../Recetas/RecetasHome'
+import RecipesHome from '../Recipes/RecipesHome'
+import Header from '../Header/Header'
+import HomeCarousel from './HomeCarousel'
+import Footer from './Footer'
 
 const Home = () => {
   return (
     <div>
-      <HomeCarousel/>
-      <HomeCarousel/>
       <Header />
+      <HomeCarousel/>
       <RecipesHome/>
+      <Footer />
+      
     </div>
   )
 }

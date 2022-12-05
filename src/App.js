@@ -12,19 +12,20 @@ import './App.css';
 function App() {
  
   return (
-    <div>
+    <RecipesContextProvider>
+    <ItemContextProvider>
+      <div>
       <Router>
-      <Navbar/>
-     
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/recetas" element={<RecetasList/>}/>
-        <Route path="/tumenu" element={<TuMenu/>}/>
-      </Routes>
+        <Navbar/>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/Recipes" element={<RecipesList/>}/>
+          <Route path="/YourMenu" element={<YourMenu/>}/>
+        </Routes>
       </Router>
-    </div>
-      </ItemContextProvider> 
-  </RecipesContextProvider>
+  </div>
+    </ItemContextProvider> 
+</RecipesContextProvider>
   );
 }
 
