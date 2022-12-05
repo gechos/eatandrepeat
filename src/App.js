@@ -1,8 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import axios from "axios";
 import {useState, useEffect} from 'react';
 import Card from "./card.js";
+import Footer from "./Footer.js"
 
 function App() {
   const [meal, setMeal] = useState([])
@@ -19,12 +19,11 @@ function App() {
   return (
     <div>
       <Card key={meal.idMeal} img={meal.strMealThumb} meal={meal.strMeal} description={meal.strInstructions}/>
+
+      <Footer/>
+
     </div>
   );
 }
 
 export default App;
-/* 
-{Object.keys(meal).map((key) => 
-  <Dog ={key}
-      subBreed={dogs[key]}/>)} */
