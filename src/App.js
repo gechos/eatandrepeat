@@ -1,7 +1,9 @@
+import logo from './logo.svg';
 import './App.css';
 //import axios from "axios";
 //import {useState, useEffect} from 'react';
 //import MediaCard from "./Recetas/cardItem.js";
+import Footer from "./Footer.js"
 import Navbar from './Navbar/Navbar';
 import { BrowserRouter as Route, Router, Routes} from 'react-router-dom';
 //import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -26,17 +28,13 @@ function App() {
 
   return (
     <div>
-      <Router>
-      <Navbar/>
-     
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/recetas" element={<RecetasList/>}/>
-        <Route path="/tumenu" element={<TuMenu/>}/>
-      </Routes>
-      </Router>
+      <Card key={meal.idMeal} img={meal.strMealThumb} meal={meal.strMeal} description={meal.strInstructions}/>
     </div>
   );
 }
 
 export default App;
+/* 
+{Object.keys(meal).map((key) => 
+  <Dog ={key}
+      subBreed={dogs[key]}/>)} */
