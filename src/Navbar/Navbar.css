@@ -5,12 +5,15 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-left: 32px;
-    padding-right: 32px;
+    position: fixed;
+}
+
+.nav-logo{
+    width: 60%;
+    margin-left: 190px;
 }
 
 .nav-links {
-    width: 400px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -18,11 +21,12 @@
 }
 
 .nav-right {
-    width: 650px;
+    width: 60%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin-right: 80px;
 }
 
 .link {

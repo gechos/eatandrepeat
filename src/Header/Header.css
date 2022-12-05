@@ -1,17 +1,38 @@
-.meals {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+*{
+    font-family: 'Inter', sans-serif;
+    background-color: white;
 }
 
-.meals-container {
-    height: 400px;
+.header{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
+    padding-bottom: 150px;
+    padding-top: 150px;
+}
+
+.title{
+    line-height: 16px;
+}
+
+.principal-word{
+    color: #a87000;
+}
+
+.left-container{
+    padding-right: 60px;
+    line-height: 24px;
+}
+
+.p{
+    width: 400px;
+    font-size: 14px;
+    color: rgb(145, 145, 145);
+}
+
+.principal-img{
+    padding-left: 10px;
 }
 
 .btn {
