@@ -7,11 +7,14 @@
     border-radius: 8px;
 }
 
-.p{
+.paragraph{
     font-size: 12px;
     height: 100px;
     text-overflow: ellipsis;
     overflow: hidden;
+    color: rgb(145, 145, 145);
+    font-weight: 400;
+    line-height: 20px;
 }
 
 .content-text{
@@ -28,4 +31,8 @@
     margin-right: auto;
     overflow: hidden;
     border-radius: 8px 8px 0px 0px;
+}
+
+.cardmeal:hover{
+    transform: scale(1.1);
 }

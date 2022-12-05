@@ -2,12 +2,13 @@ import React from 'react'
 import {Link} from 'react-router-dom';
 import '././Navbar.css';
 import Search from './Search';
+import logo from '././logo.png'
 
 const Navbar = () => {
   return (
     <div className='navbar'>
         <div className='nav-logo'>
-            <h3>Eat and Repeat</h3>
+            <img className='logo-img' width='120' src={logo}/>
         </div>
         <div className='nav-right'>
         <div className='nav-links'>

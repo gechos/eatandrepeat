@@ -2,7 +2,6 @@ import axios from "axios";
 import { useEffect, useState } from 'react';
 import './card.css'
 import * as React from 'react';
-import './card.css'
 import CardMedia from '@mui/material/CardMedia';
 
 export default function MediaCard(props) {
@@ -16,7 +15,7 @@ export default function MediaCard(props) {
             />
             <div className="content-text">
                 <h4>{props.meal}</h4>
-                <p className="p">{props.description}</p>
+                <p className="paragraph">{props.description}</p>
             </div>
         </div>
     );
