@@ -1,10 +1,12 @@
-import React from 'react'
-import RecetasHome from '../Recetas/RecetasHome'
+import RecipesHome from '../Recipes/RecipesHome';
+import HomeCarousel from './HomeCarousel';
 
 const Home = () => {
   return (
     <div>
-      <RecetasHome/>
+      <HomeCarousel/>
+      <HomeCarousel/>
+      <RecipesHome/>
     </div>
   )
 }

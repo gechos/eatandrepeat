@@ -2,8 +2,9 @@ import axios from "axios";
 import { useEffect, useState } from 'react';
 import './card.css'
 import * as React from 'react';
-import './card.css'
+import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
+
 
 export default function MediaCard(props) {
     return (

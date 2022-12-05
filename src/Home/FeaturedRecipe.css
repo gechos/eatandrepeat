@@ -1,0 +1,40 @@
+.recipe-container {
+    height: 500px;    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    //border: 4px solid blue;
+    position: relative;
+    //overflow: hidden;
+}
+.recipe_img{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8%;
+    margin: 0px;
+}
+.img{
+    margin: 0px ; 
+    height: 500px;
+    padding: auto;
+}
+
+.recipe_text {
+    width: 100%;
+    margin-top:0px ; 
+    justify-content: center;
+}
+
+.recipe_des { 
+    justify-content: center;
+    margin-top:0px ;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 12px;
+    height: 250px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+h3,h4{
+    text-align: center;
+}
+

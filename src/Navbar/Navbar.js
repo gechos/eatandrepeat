@@ -1,4 +1,3 @@
-import React from 'react'
 import {Link} from 'react-router-dom';
 import '././Navbar.css';
 import Search from './Search';
@@ -12,8 +11,8 @@ const Navbar = () => {
         <div className='nav-right'>
         <div className='nav-links'>
                 <Link className='link' to="/">Home</Link>
-                <Link className='link' to="/recetas">Meals</Link>
-                <Link className='link' to="/tumenu">Your menu</Link>
+                <Link className='link' to="/Recipes">Meals</Link>
+                <Link className='link' to="/YourMenu">Your menu</Link>
         </div>
         <Search/>
         </div>
