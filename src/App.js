@@ -3,7 +3,7 @@ import './App.css';
 //import axios from "axios";
 //import {useState, useEffect} from 'react';
 //import MediaCard from "./Recetas/cardItem.js";
-import Footer from "./Footer.js"
+import Footer from "./Home/Footer.js"
 import Navbar from './Navbar/Navbar';
 import { BrowserRouter as Route, Router, Routes} from 'react-router-dom';
 //import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
