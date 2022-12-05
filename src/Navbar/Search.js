@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useState,useEffect } from 'react';
-import '././Search.css';
+import './Search.css';
 
 
 export default function FreeSolo() {
@@ -11,7 +11,6 @@ export default function FreeSolo() {
     const getSearchData = async () => {
       const respSearch = await axios.get('https://www.themealdb.com/api/json/v1/1/random.php')
       setSearch(respSearch.data.meals[0]);
-      console.log(respSearch.data.meals[0])
     }
     getSearchData();
   }, []);

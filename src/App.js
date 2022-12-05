@@ -1,35 +1,30 @@
 import logo from './logo.svg';
-import './App.css';
-//import axios from "axios";
-//import {useState, useEffect} from 'react';
-//import MediaCard from "./Recetas/cardItem.js";
+import { ItemContextProvider } from './Context/ItemContextProvider';
+import {RecipesContextProvider } from './Context/RecipesContextProvider';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Footer from "./Home/Footer.js"
 import Navbar from './Navbar/Navbar';
-import { BrowserRouter as Route, Router, Routes} from 'react-router-dom';
-//import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import RecetasList from './Recetas/recetaslist';
+import RecipesList from './Recipes/RecipesList';
 import Home from './Home/Home';
-import TuMenu from './Tu menú/TuMenu';
-//import {CarouselHome} from './Components/CarouselHome';
-
+import YourMenu from './YourMenu/YourMenu';
+import './App.css';
 
 function App() {
-/*
-  const [meal, setMeal] = useState([])
-
-  useEffect(() => {
-    const getMealData = async () => {
-      const respMeal = await axios.get('https://www.themealdb.com/api/json/v1/1/random.php')
-      setMeal(respMeal.data.meals[0]);
-      console.log(respMeal.data.meals[0])
-    }
-    getMealData();
-  }, []);*/
-
+ 
   return (
     <div>
-      <Card key={meal.idMeal} img={meal.strMealThumb} meal={meal.strMeal} description={meal.strInstructions}/>
+      <Router>
+      <Navbar/>
+     
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/recetas" element={<RecetasList/>}/>
+        <Route path="/tumenu" element={<TuMenu/>}/>
+      </Routes>
+      </Router>
     </div>
+      </ItemContextProvider> 
+  </RecipesContextProvider>
   );
 }
 

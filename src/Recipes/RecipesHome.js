@@ -1,18 +1,15 @@
-import React from 'react'
-import { AppContext } from '../Context/context'
 import MediaCard from './cardItem'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
-import '././RecetasHome.css'
+import './RecipesHome.css'
 
-const RecetasHome = () => {
+const RecipesHome = () => {
     const [meal, setMeal] = useState([])
 
     useEffect(() => {
         const getMealData = async () => {
             const respMeal = await axios.get('https://www.themealdb.com/api/json/v1/1/search.php?f=b')
             setMeal(respMeal.data.meals);
-            console.log(respMeal.data.meals)
         }
         getMealData();
     }, []);
@@ -28,5 +25,5 @@ const RecetasHome = () => {
     )
 }
 
-export default RecetasHome
+export default RecipesHome;
 
