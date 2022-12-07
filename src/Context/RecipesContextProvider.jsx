@@ -16,9 +16,8 @@ export const RecipesContextProvider = ({children}) => {
         getMealData();
     }, []);
     
-    
       return (
-      <RecipesContext.Provider value={Recipes}>
+      <RecipesContext.Provider value={{Recipes}}>
           {children}
       </RecipesContext.Provider>
       

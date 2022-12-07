@@ -2,9 +2,8 @@
     height: 500px;    
     display: grid;
     grid-template-columns: 1fr 1fr;
-    //border: 4px solid blue;
     position: relative;
-    //overflow: hidden;
+    overflow: hidden;
 }
 .recipe_img{
     width: 100%;
