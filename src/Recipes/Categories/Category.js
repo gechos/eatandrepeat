@@ -28,7 +28,8 @@ const Category = () => {
                 </button>
             </div>
             {category.map(category => (
-                <button onClick={()=> setLetters(false)} className='btn-category'><div className='category' key={category.idCategory}>
+                <button onClick={()=> setLetters(false)} className='btn-category'>
+                    <div className='category' key={category.idCategory}>
                     <img width='60px' src={category.strCategoryThumb} alt="picture-category" />
                     <h6>{category.strCategory}</h6>
                 </div>
