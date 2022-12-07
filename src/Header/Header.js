@@ -14,7 +14,7 @@ const Header = () => {
             <button className='btn'>¡Vamos!</button>
         </div>
         <div>
-            <img className='principal-img' width="500" src={image} alt="comida"></img>
+            <img className='principal-img' width="500" src={image} alt="food"></img>
         </div>
     </div>
   )

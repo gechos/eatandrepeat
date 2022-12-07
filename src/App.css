@@ -20,6 +20,7 @@
   overflow: hidden;
   border-radius: 8px 8px 0px 0px;
 }
+
 .btn {
   font-size: 16px;
   width: 100px;
@@ -27,7 +28,7 @@
   background-color: initial;
   background-image: linear-gradient(-180deg, #e3ac3d, #a87000);
   border-radius: 6px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  box-shadow: #fff2d9 0 2px 4px;
   color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
@@ -37,19 +38,16 @@
   outline: 0;
   overflow: hidden;
   padding: 0 20px;
-  pointer-events: auto;
   position: relative;
   text-align: center;
-  touch-action: manipulation;
-  user-select: none;
-  -webkit-user-select: none;
   vertical-align: top;
   white-space: nowrap;
   z-index: 9;
   border: 0;
   transition: box-shadow .2s;
+  font-weight: 500;
 }
 
 .btn:hover {
-  box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+  box-shadow: #ffe4b1 0 3px 8px;
 }
