@@ -1,5 +1,3 @@
-import { ItemContextProvider } from './Context/ItemContextProvider';
-import {RecipesContextProvider } from './Context/RecipesContextProvider';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Navbar from './Navbar/Navbar';
 import RecipesList from './Recipes/RecipesList';
@@ -10,8 +8,6 @@ import './App.css';
 function App() {
  
   return (
-    <RecipesContextProvider>
-      <ItemContextProvider>
         <div>
         <Router>
           <Navbar/>
@@ -22,8 +18,6 @@ function App() {
           </Routes>
         </Router>
     </div>
-      </ItemContextProvider> 
-  </RecipesContextProvider>
   );
 }
 

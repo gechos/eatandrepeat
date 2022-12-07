@@ -1,29 +1,27 @@
-import { useContext} from "react";
-import { RecipesContext} from "../Context/RecipesContextProvider";
+import { useState, useEffect } from 'react'
+//importamos las funciones
+import * as API from '../Services/launchesApis'
+import MediaCard from './cardItem'
 
 
-export const RecipesList = () => {
-  
-  const recipes = useContext(RecipesContext)
-   
+const RecipesList = () => {
+    const [launches,setLaunches] = useState([])
 
-  return (
-    <div className="cardsContainer">
-        { recipes.map(recipe => {
-            return(
-              <div className="card" key={recipe.idMeal}>
-                <img src={recipe.strMealThumb} className="card-img"  alt="imagen"/>
-                <p className="recipe-name">{recipe.strMeal}</p>
-                <div className="SelectContainer">
-                    <button>Select recipe</button>
+    useEffect(()=>{
+        API.getLauncheByLetter("b").then (setLaunches);
+    },[]);
+    //console.log(launches);
+    return (
+        <>
+            <h1> Lauches Api B</h1>
+            <div class="meals-container">
+                <div className='meals'>
+                    {launches.map((launch) => (<MediaCard className="meal" key={launch.idMeal} img={launch.strMealThumb} meal={launch.strMeal} description={launch.strInstructions} />))}
                 </div>
-              </div>
-          )
-        })
-      }
-    </div>
-  )
+                <button className='btn'>See more...</button>
+            </div>
+        </>
+        
+    )
 }
-
-
-export default RecipesList
+export default RecipesList;
