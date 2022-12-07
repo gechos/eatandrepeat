@@ -32,3 +32,12 @@ export async function getLauncheById(Number) {
   }
 }
 
+export async function getLauncheRandom() {
+  try {
+    const response = await fetch(`${API_URL_RANDOM}`);
+    const data = await response.json();
+    return data.meals[0];
+  } catch (error) {
+    console.error(error);
+  }
+}
