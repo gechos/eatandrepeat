@@ -11,9 +11,12 @@ const Letters = () => {
   let array = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
 
   const [launches,setLaunches] = useState([])
+  const [id,SetId]=useState('A')
+  console.log('id')
+ 
   
-    useEffect(()=>{
-        API.getLauncheByLetter('b').then (setLaunches);
+    useEffect(()=>{ 
+        API.getLauncheByLetter({id}).then (setLaunches);
     },[click]);
     
   
@@ -23,7 +26,7 @@ const Letters = () => {
     <div>
       <div className='letters'>
         {array.map((item) => 
-              <button onClick={()=>{setClick(!click)} } className='clickable' key={item}>
+              <button onClick={()=>{setClick(!click)}} onChange={(e) => SetId(e.target.value)}  className='clickable' key={item}>
                     {item}
               </button>
             )}    

@@ -14,7 +14,7 @@ const Meals = () => {
           const respRecip = await axios.get('https://www.themealdb.com/api/json/v1/1/search.php?f=b')
           setRecip(respRecip.data.meals);
           setFiltered(respRecip.data.meals)
-          console.log(respRecip.data.meals)
+         
       }
       getRecipData();
   }, []);
@@ -26,7 +26,6 @@ const Meals = () => {
         <Categories />
           <div className='meals'>
           {recip.map((key) => <MediaCard className="meal" key={key.idMeal} img={key.strMealThumb} meal={key.strMeal} description={key.strInstructions} />)}
-
           </div>
           <button className='btn'>Ver más</button>
       </div>
@@ -34,28 +33,3 @@ const Meals = () => {
 }
 
 export default Meals
-
-/* 
-  const [recipe, setRecipe] = useState([])
-useEffect(() => {
-  fetchRecipe();
-}, []);
-
-const fetchRecipe = async() => {
-const data = await fetch(
-  'https://www.themealdb.com/api/json/v1/1/search.php?f=b'
-);
-const recipes = await data.json();
-setRecipe(recipes.results);
-console.log(recipes)
-};
-
-return (
-<div>
-    <Categories />
-    <div className='categories'>
-    {recipe.map((key) => <MediaCard className="meal" key={key.idMeal} img={key.strMealThumb} meal={key.strMeal} description={key.strInstructions} />)}
-    </div>
-</div>
-) 
-*/

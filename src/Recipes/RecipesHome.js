@@ -15,7 +15,7 @@ const RecipesHome = () => {
     }, []);
 
     return (
-        <div class="meals-container">
+        <div className="meals-container">
             <div className='meals'>
             {meal.slice(1,5).map((key) => <MediaCard className="meal" key={key.idMeal} img={key.strMealThumb} meal={key.strMeal} description={key.strInstructions} />)}
 
