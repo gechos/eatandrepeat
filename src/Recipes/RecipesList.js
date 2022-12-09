@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react'
-import MediaCard from './cardItem';
 //importamos las funciones
-import * as API from '../Services/launchesApis'
-import MediaCard from './cardItem'
+import * as API from '../Services/launchesApis';
+import MediaCard from './cardItem';
 
 
 
