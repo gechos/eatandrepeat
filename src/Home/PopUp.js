@@ -8,11 +8,11 @@ function PopUp(props) {
     return (
         <div className='popup'>
                 <><button className="closeBtn" onClick={props.close}>x</button></>
-                <img width="200" src={props.img}></img>
+                <img className="img" src={props.img}></img>
                 <br/>
-                <b>Name: </b> {props.meal}
+                <b>{props.meal}</b>
                 <br/>
-                <b>Description: </b>{props.description}        
+                <><button className="btn">Details</button></>        
                 </div>
     )
 
