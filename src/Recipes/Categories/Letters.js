@@ -10,6 +10,7 @@ const Letters = () => {
   const [click, setClick] = useState(false)
   let array = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
 
+<<<<<<< HEAD
   const [launches,setLaunches] = useState([])
   
     useEffect(()=>{
@@ -18,6 +19,15 @@ const Letters = () => {
     
   
   
+=======
+    useEffect(() => {
+        const getAData = async () => {
+            const respA = await axios.get('https://www.themealdb.com/api/json/v1/1/search.php?f=a')
+            setA(respA.data.meals);
+        }
+        getAData();
+    }, []);
+>>>>>>> Laura
 
   return (
     <div>
