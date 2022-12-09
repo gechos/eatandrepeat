@@ -10,7 +10,7 @@ const Letters = () => {
 
     useEffect(() => {
         const getAData = async () => {
-            const respA = await axios.get('https://www.themealdb.com/api/json/v1/1/search.php?f=b')
+            const respA = await axios.get('https://www.themealdb.com/api/json/v1/1/search.php?f=a')
             setA(respA.data.meals);
         }
         getAData();
