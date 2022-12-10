@@ -14,10 +14,10 @@ function Footer() {
         const randomRecipe = async () => {
                 const respRandomMeal = await axios.get('https://www.themealdb.com/api/json/v1/1/random.php');
                 setRandomMeal(respRandomMeal.data.meals[0]);
+                console.log(respRandomMeal)
             } 
             randomRecipe();
         }, [shownPopUp])
-
 
 
     return (
@@ -30,7 +30,7 @@ function Footer() {
                     img={randomMeal.strMealThumb} 
                     meal={randomMeal.strMeal} 
                     description={randomMeal.strInstructions}
-                    close={(item)=>setShownPopUp(item)} />
+                    close={()=>setShownPopUp()} />
                     
                      </div> 
                 : null}
