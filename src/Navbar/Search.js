@@ -39,8 +39,6 @@ export default function FreeSolo() {
       
 
       if(completeText.toLowerCase().normalize("NFD").includes(inputValue)){
-        console.log(completeText)
-        console.log(`${strMeal.strMeal}`);
         return strMeal.strMeal; // esto posiblemente es erróneo chequear
       }
     });
@@ -76,6 +74,12 @@ export default function FreeSolo() {
     onChange
   }
 
+  /*const eventEnter=(e)=>{
+    if(e.key == "Enter"){
+      var split = e.target.value
+    }
+  }*/
+
   return (
    <div className="search">
 
@@ -89,7 +93,7 @@ export default function FreeSolo() {
           /*onSuggestionSelected={eventEnter}*/
         
         />
-      <button type="submit" className="search-button">
+      <button type="submit" className="search-button" onClick={()=>console.log(selectedMeal.strMeal)}>
         <ion-icon className="icon" name="search-outline"></ion-icon>
       </button>
 

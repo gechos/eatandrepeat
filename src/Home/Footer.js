@@ -20,7 +20,6 @@ function Footer() {
         }, [shownPopUp])
 
 
-
     return (
         <div className="foot">
             <button className="btn" onClick={()=> {setShownPopUp( !shownPopUp ? true : false)}}>Random</button>
