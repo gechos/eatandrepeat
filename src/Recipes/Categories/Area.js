@@ -1,8 +1,6 @@
-import React from 'react'
-import globe from './globe.png'
+import globe from '../../area/globe.png'
 import './Category.css'
 import Letters from './Letters.css'
-import { useState } from 'react'
 
 const Area = () => {
     return (

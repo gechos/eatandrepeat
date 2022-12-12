@@ -9,7 +9,6 @@ import {getLauncheByLetter, getLauncheByCategory} from '../Services/launchesApis
 const Meals = () => {
   const [recip, setRecip] = useState([]);
   const [filtered, setFiltered] = useState([]);
-  const [showCategories, setShowCategories] = useState(false);
 
   const handleOnClickItem=(itemCat, item)=>{
     switch (itemCat) {
