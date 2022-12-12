@@ -13,10 +13,11 @@ const Category = ({onClickItem}) => {
 
     const handleOnClick = () =>{
         setLetters(!letters)
+        setAreas(false)
     }
     const handleOnClickCountry = () =>{
         setAreas(!areas)
-        console.log(areas)
+        setLetters(false)
     }
     const handleOnClickLetter =(letter)=>{
 
