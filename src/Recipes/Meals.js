@@ -51,20 +51,3 @@ const Meals = () => {
 }
 
 export default Meals
-
-/* 
-  const [recipe, setRecipe] = useState([])
-useEffect(() => {
-  fetchRecipe();
-}, []);
-
-const fetchRecipe = async() => {
-const data = await fetch(
-  'https://www.themealdb.com/api/json/v1/1/search.php?f=b'
-);
-const recipes = await data.json();
-setRecipe(recipes.results);
-console.log(recipes)
-};
-
-export default Meals;
