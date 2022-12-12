@@ -31,8 +31,7 @@ const Meals = () => {
       const getRecipData = async () => {
           const respRecip = await axios.get('https://www.themealdb.com/api/json/v1/1/search.php?f=b')
           setRecip(respRecip.data.meals);
-          setFiltered(respRecip.data.meals)
-          console.log(respRecip.data.meals)
+          setFiltered(respRecip.data.meals);
       }
       getRecipData();
   }, []);
@@ -41,10 +40,17 @@ const Meals = () => {
       <div class="meals-container">
         <Mealsheader />
         <FilterIngredient recip={recip} setFiltered={setFiltered}/>
-        <Categories />
+        <Categories onClickItem={handleOnClickItem}/>
           <div className='meals'>
-          {recip.map((key) => <MediaCard className="meal" key={key.idMeal} img={key.strMealThumb} meal={key.strMeal} description={key.strInstructions} />)}
-
+            {recip.map((key) => 
+              <MediaCard 
+                    className="meal" 
+                    key={key.idMeal} 
+                    img={key.strMealThumb} 
+                    meal={key.strMeal} 
+                    description={key.strInstructions} 
+                    />
+              )}
           </div>
           <button className='btn'>Ver más</button>
       </div>
