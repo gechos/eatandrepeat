@@ -29,7 +29,7 @@ const RecipesHome = () => {
     }, []);
 
     return (
-        <div class="meals-container">
+        <div className="meals-container">
             <div className='meals'>
                 <button className="button-scroll" onClick={() => (page == 0 ? null : setPage(page - 1))}><ion-icon className='icon' name="chevron-back-outline"></ion-icon></button>
                 {meal.slice(page * 4, (page + 1) * 4).map((key) => <MediaCard className="meal" key={key.idMeal} img={key.strMealThumb} meal={key.strMeal} description={key.strInstructions} />)}
