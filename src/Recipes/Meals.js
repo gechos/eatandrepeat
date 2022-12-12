@@ -6,6 +6,7 @@ import FilterIngredient from "./Categories/FilterIngredient";
 import Mealsheader from "./mealsheader";
 import {getLauncheByLetter, getLauncheByCategory} from '../Services/launchesApis'
 
+
 const Meals = () => {
   const [recip, setRecip] = useState([]);
   const [filtered, setFiltered] = useState([]);
@@ -50,4 +51,4 @@ const Meals = () => {
   )
 }
 
-export default Meals
+export default Meals;
