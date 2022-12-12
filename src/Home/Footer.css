@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     background-color: black; 
-    align-self: center;
+    width: 100vw;
     }
 
 .btn {
@@ -41,5 +41,6 @@
 
     .footerText{
         color:#ffffff;
-        font-size: 10pt;
+        font-size: 12px;
+        background: none;
     }

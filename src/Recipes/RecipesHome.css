@@ -3,15 +3,58 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 .meals-container {
-    height: 400px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.meals1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+.meals-container1 {
+    height: 450px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 100px;
+}
+
+.footer-meals{
+    width: 100vw;
+}
+
+#btn-right{
+    margin-left: 16px;
+}
+
+.button-scroll{
+    border: none;
+    width: 40px;
+    height: 40px;
+}
+
+.button-scroll:hover{
+    border-radius: 60px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.filters{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .btn {

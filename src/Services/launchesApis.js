@@ -21,7 +21,6 @@ export async function getLauncheByLetter(Letter) {
   }
 }
 
-
 export async function getLauncheById(Number) {
   try {
     const response = await fetch(`${API_URL_ID}${Number}`);
