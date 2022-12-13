@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react'
 import axios from 'axios'
-import '././Filter.css'
+import './Filter.css'
 
 const FilterCountry = ({ setFiltered, recip }) => {
     const [countryName, setCountryName] = useState('')
