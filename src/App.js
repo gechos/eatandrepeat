@@ -4,6 +4,7 @@ import Footer from "./Home/Footer.js"
 import Navbar from './Navbar/Navbar';
 import Home from './Home/Home';
 import YourMenu from './YourMenu/YourMenu';
+import CompleteRecipe from './Recipes/CompleteRecipe.js'
 import './App.css';
 import Meals from './Recipes/Meals'
 
@@ -17,6 +18,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/Meals" element={<Meals />} />
               <Route path="/YourMenu" element={<YourMenu />} />
+              <Route path="/CompleteRecipe" element={<CompleteRecipe />}/>
             </Routes>
           </Router>
         </div>

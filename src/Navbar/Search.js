@@ -1,6 +1,8 @@
 import axios from 'axios';
 import { useState,useEffect } from 'react';
 import './Search.css';
+import {Link} from 'react-router-dom';
+
 
 import Autosuggest from 'react-autosuggest';
 
@@ -73,7 +75,6 @@ export default function FreeSolo() {
     onChange
   }
 
-  
   return (
    <div className="search">
 
@@ -85,9 +86,13 @@ export default function FreeSolo() {
           renderSuggestion={renderSuggestion}
           inputProps={inputProps}
         
-        />
-      <button type="submit" className="search-button" onClick={()=>console.log(selectedMeal.strMeal)}>
+      />
+
+      <Link to="/CompleteRecipe" state={{id: `${selectedMeal.idMeal}`}}>
+        <button className="search-button" >
         <ion-icon className="icon" name="search-outline"></ion-icon>
-      </button>
+        </button>
+      </Link>
 
   </div>)};
+  
