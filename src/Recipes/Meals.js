@@ -6,7 +6,7 @@ import FilterIngredient from "./Categories/FilterIngredient";
 import FilterCountry from './Categories/FilterCountry';
 import Footer from '../Home/Footer';
 import Mealsheader from "./mealsheader";
-import {getLauncheByLetter, getLauncheByCategory, getLauncheByArea} from '../Services/launchesApis'
+import {getLauncheByLetter, getLauncheByCategory} from '../Services/launchesApis'
 
 
 const Meals = () => {
