@@ -2,16 +2,20 @@ import {Link} from 'react-router-dom';
 import '././Navbar.css';
 import Search from './Search';
 import logo from '././logo.png';
-
-
+import {Routes, Route, useNavigate} from 'react-router-dom';
 
 const Navbar = () => {
 
+  const navigate = useNavigate();
+
+  const navigateToHome = () => {
+    navigate('/');
+  };
 
   return (
     <div className='navbar'>
         <div className='nav-logo'>
-            <img className='logo-img' width='120' src={logo}/>
+            <img onClick={navigateToHome} className='logo-img' width='120' src={logo}/>
         </div>
         <div className='nav-right'>
         <div className='nav-links'>

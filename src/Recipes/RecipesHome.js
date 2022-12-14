@@ -2,11 +2,17 @@ import MediaCard from './cardItem'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import './RecipesHome.css'
+import {Routes, Route, useNavigate} from 'react-router-dom';
 
 const RecipesHome = () => {
     const [meal, setMeal] = useState([])
     const [page, setPage] = useState(0);
     const [pagination, setPagination] = useState([]);
+    const navigate = useNavigate();
+
+    const navigateToMeals = () => {
+        navigate('/Meals');
+    };
 
     useEffect(() => {
         let newPagination = [];
@@ -35,7 +41,7 @@ const RecipesHome = () => {
                 {meal.slice(page * 4, (page + 1) * 4).map((key) => <MediaCard className="meal" key={key.idMeal} img={key.strMealThumb} meal={key.strMeal} description={key.strInstructions} />)}
                 <button id='btn-right' className="button-scroll" onClick={() => (page == 7 ? null : setPage(page + 1))}><ion-icon className='icon' name="chevron-forward-outline"></ion-icon></button>
             </div>
-            <button className='btn'>Ver más</button>
+            <button onClick={navigateToMeals} className='btn'>See More</button>
         </div>
     )
 }

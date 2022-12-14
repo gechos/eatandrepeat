@@ -1,12 +1,23 @@
-.foot{
-    display:flex;
-    flex-direction: column;
+.foot {
     height: 200px;
+    width: 100vw;
+    background: no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black; 
-    width: 100vw;
-    }
+}
+
+.overlay1 {
+    height: 160px;
+    width: 60vw;
+    background-color: rgb(219, 173, 94);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 16px;
+}
 
 .btn {
     font-size: 16px;
@@ -33,14 +44,41 @@
     border: 0;
     transition: box-shadow .2s;
     font-weight: 500;
-    }
-    
-    .btn:hover {
-    box-shadow: #ffe4b1 0 3px 8px;
-    }
+}
 
-    .footerText{
-        color:#ffffff;
-        font-size: 12px;
-        background: none;
-    }
+.btn:hover {
+    box-shadow: #ffe4b1 0 3px 8px;
+}
+
+.footer-text-small {
+    color: white;
+    font-size: 12px;
+    background: none;
+}
+
+.footer-text {
+    color: white;
+    background: none;
+    font-size: 14px;
+}
+
+.title-footer {
+    background: none;
+    color: #FFFFFF;
+}
+
+.title-subtitle1 {
+    background: none;
+    line-height: 16px;
+    display: flex;
+    flex-direction: column;
+    line-height: 0px;
+}
+
+.left-container1 {
+    display: flex;
+    flex-direction: column;
+    background: rgb(219, 173, 94);
+    border-radius: 8px;
+    line-height: 8px;
+}

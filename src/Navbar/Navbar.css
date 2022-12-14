@@ -13,15 +13,19 @@
     margin-left: 190px;
 }
 
+.logo-img{
+    cursor: pointer;
+}
+
 .nav-links {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
 .nav-right {
-    width: 60%;
+    width: 70%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -51,6 +55,7 @@
     touch-action: manipulation;
     white-space: nowrap;
     word-break: break-word;
+    margin-right: 8px;
 }
 
 .link:active,

@@ -6,12 +6,13 @@ import { useState } from 'react'
 
 const Alphabetical = () => {
     return (
-        <div className='category'>
-            <button className='category clickable2'>
-            <img width='35px' src={image} alt="picture-category" />
-            <h6>Alphabetical</h6>
-            </button>
-        </div>
+
+        <button className='btn-category clickable2'>
+            <div className='category'>
+                <img width='35px' src={image} alt="picture-category" />
+                <h6>Alphabetical</h6>
+            </div>
+        </button>
     )
 }
 

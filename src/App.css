@@ -27,7 +27,8 @@
   box-shadow: #fff2d9 0 2px 4px;
   color: #FFFFFF;
   cursor: pointer;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   font-family: Inter, -apple-system, system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
   height: 40px;
   line-height: 40px;
@@ -38,7 +39,7 @@
   text-align: center;
   vertical-align: top;
   white-space: nowrap;
-  z-index: 9;
+  z-index: 1;
   border: 0;
   transition: box-shadow .2s;
   font-weight: 500;
