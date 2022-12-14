@@ -7,19 +7,12 @@
     padding: 15px;
     margin: 5px;
     border-radius: 15px;
-    box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
-    width: 300px;
-    height: 400px;
+    box-shadow: 2px 2px 2px #c2c5cc;
+    max-width: 50%;
+    max-height: 300px;
+    overflow: clip;
+    text-overflow: ellipsis;
     transition: all 0.2s ease-in-out;
-    font-family: 'Inter', sans-serif;
-}
-
-.img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px 15px 0px 0px;
-    width: 50px;
 }
 
 .closeBtn {
@@ -28,8 +21,6 @@
     border-radius: 20px;
     color: #d39b2c;
     font-size: 20px;
-    height: 25px;
-    width: 25px;
     margin: 5px;
     text-align: center;
     align-self: flex-end;
@@ -39,4 +30,3 @@
 .closeBtn:hover {
     background-color: #a87000;
 }
-
