@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react'
 import axios from 'axios'
-import '././Filter.css'
+import './Filter.css'
 
 const FilterIngredient = ({ setFiltered, recip }) => {
   const [ingredientName, setIngredientName] = useState('')
@@ -11,7 +11,6 @@ const FilterIngredient = ({ setFiltered, recip }) => {
     const getIngredientData = async () => {
       const respIngredient = await axios.get('https://www.themealdb.com/api/json/v1/1/list.php?i=list')
       setIngredient(respIngredient.data.meals);
-      console.log(respIngredient.data.meals)
     }
     getIngredientData();
   }, []);
@@ -61,8 +60,6 @@ const FilterIngredient = ({ setFiltered, recip }) => {
 
 
     setFiltered([].concat(filtering1, filtering2, filtering3, filtering4, filtering5, filtering6, filtering7, filtering8, filtering9, filtering10, filtering11, filtering12, filtering13, filtering14, filtering15, filtering16, filtering17, filtering18, filtering19, filtering20));
-    console.log([].concat(filtering1, filtering2, filtering3, filtering4, filtering5, filtering6))
-    console.log(ingredientName)
   }, [ingredientName])
 
   return (

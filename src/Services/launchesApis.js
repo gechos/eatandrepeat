@@ -2,6 +2,7 @@ const API_URL_LETTER = "https://www.themealdb.com/api/json/v1/1/search.php?f=";
 const API_URL_ID= "https://www.themealdb.com/api/json/v1/1/lookup.php?i=";
 const API_URL_RANDOM= "https://www.themealdb.com/api/json/v1/1/random.php";
 const API_URL_CATEGORY= "https://www.themealdb.com/api/json/v1/1/filter.php?c=";
+const API_URL_AREA= "https://www.themealdb.com/api/json/v1/1/filter.php?a=";
 //by name www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata
 //List all meal categories www.themealdb.com/api/json/v1/1/categories.php
 /*List all Categories, Area, Ingredients
@@ -25,6 +26,16 @@ export async function getLauncheByLetter(Letter) {
 export async function getLauncheByCategory(Text) {
   try {
     const response = await fetch(`${API_URL_CATEGORY}${Text}`);
+    const data = await response.json();
+    return data.meals;
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+export async function getLauncheByArea(Country) {
+  try {
+    const response = await fetch(`${API_URL_AREA}${Country}`);
     const data = await response.json();
     return data.meals;
   } catch (error) {

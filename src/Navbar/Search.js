@@ -12,7 +12,6 @@ export default function FreeSolo() {
       const getSearchData = async () => {
         var respSearch = await axios.get(`https://www.themealdb.com/api/json/v1/1/search.php?s=b`)
         setSearch(respSearch.data.meals);
-        console.log(search);
       }
       getSearchData();
     }, [])  
@@ -74,12 +73,7 @@ export default function FreeSolo() {
     onChange
   }
 
-  /*const eventEnter=(e)=>{
-    if(e.key == "Enter"){
-      var split = e.target.value
-    }
-  }*/
-
+  
   return (
    <div className="search">
 
@@ -90,7 +84,6 @@ export default function FreeSolo() {
           getSuggestionValue={getSuggestionValue}
           renderSuggestion={renderSuggestion}
           inputProps={inputProps}
-          /*onSuggestionSelected={eventEnter}*/
         
         />
       <button type="submit" className="search-button" onClick={()=>console.log(selectedMeal.strMeal)}>
@@ -98,33 +91,3 @@ export default function FreeSolo() {
       </button>
 
   </div>)};
-
-/* import * as React from 'react';
-import TextField from '@mui/material/TextField';
-import Stack from '@mui/material/Stack';
-import Autocomplete from '@mui/material/Autocomplete';
-
-export default function FreeSolo() {
-  const [search, setSearch] = useState([])
-  const[input, setInput] = useState("")
-
-  useEffect(() => {
-    const getSearchData = async () => {
-      const respSearch = await axios.get('https://www.themealdb.com/api/json/v1/1/search.php?f=b')
-      setSearch(respSearch.data.meals);
-      console.log(respSearch.data.meals)
-    }
-    getSearchData();
-  }, []);
-  return (
-    <Stack spacing={2} sx={{ width: 300 }}>
-      <Autocomplete
-        id="free-solo-demo"
-        freeSolo
-        options={search.map((key) => key.id)}
-        renderInput={(params) => <TextField {...params} label="freeSolo" />}
-      />
-    </Stack>
-  );
-} */
-
