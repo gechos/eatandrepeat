@@ -62,7 +62,7 @@ export default function CompleteRecipe() {
                </div>         
            </div>
 
-           <button onClick={}>←</button>  <button>→</button>
+           <button>←</button>  <button>→</button>
  
        </div>
    );
