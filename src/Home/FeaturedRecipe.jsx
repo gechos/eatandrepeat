@@ -1,4 +1,3 @@
-
 import "./FeaturedRecipe.css";
 
 export default function FeaturedRecipe(props) {

@@ -1,20 +1,16 @@
 import logo from './logo.svg';
-import { ItemContextProvider } from './Context/ItemContextProvider';
-import { RecipesContextProvider } from './Context/RecipesContextProvider';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Footer from "./Home/Footer.js"
 import Navbar from './Navbar/Navbar';
-import RecipesList from './Recipes/RecipesList';
 import Home from './Home/Home';
 import YourMenu from './YourMenu/YourMenu';
+import CompleteRecipe from './Recipes/CompleteRecipe.js'
 import './App.css';
 import Meals from './Recipes/Meals'
 
 function App() {
 
   return (
-    <RecipesContextProvider>
-      <ItemContextProvider>
         <div>
           <Router>
             <Navbar />
@@ -22,11 +18,10 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/Meals" element={<Meals />} />
               <Route path="/YourMenu" element={<YourMenu />} />
+              <Route path="/CompleteRecipe" element={<CompleteRecipe />}/>
             </Routes>
           </Router>
         </div>
-      </ItemContextProvider>
-    </RecipesContextProvider>
   );
 }
 

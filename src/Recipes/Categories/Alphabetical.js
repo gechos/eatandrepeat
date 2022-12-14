@@ -1,8 +1,5 @@
-import React from 'react'
-import image from './././letters.png'
+import image from './letters.png'
 import './Category.css'
-import Letters from './Letters.css'
-import { useState } from 'react'
 
 const Alphabetical = () => {
     return (

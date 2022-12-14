@@ -1,0 +1,33 @@
+
+.CompleteRecipe_container{
+  border-radius: 5px;
+  box-shadow: hsla(0, 0, 0, .2) 0 4px 2px -2px;
+  font-family: sans-serif;
+  font-weight: 100;
+  margin: auto;
+  width: 75%;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.CompleteRecipe_text{
+    display: flex;
+    margin-top: 60px;
+   
+}
+
+.CompleteRecipe_details{
+    display: flex;
+}
+
+.ingredients{
+    line-height: 10px;
+}
+
+.recipe-image{
+   border-radius: 8px 8px 0 0;
+   box-shadow: inset rgb(0 0 0 / 20%) 0 64px 64px 16px;
+}
+

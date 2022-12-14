@@ -1,4 +1,6 @@
-
+.App {
+  text-align: center;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -43,8 +45,4 @@
   border: 0;
   transition: box-shadow .2s;
   font-weight: 500;
-}
-
-.btn:hover {
-  box-shadow: #ffe4b1 0 3px 8px;
 }

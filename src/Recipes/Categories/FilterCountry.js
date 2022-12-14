@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react'
 import axios from 'axios'
-import '././Filter.css'
+import './Filter.css'
 
 const FilterCountry = ({ setFiltered, recip }) => {
     const [countryName, setCountryName] = useState('')
@@ -11,7 +11,6 @@ const FilterCountry = ({ setFiltered, recip }) => {
         const getCountryData = async () => {
             const respCountry = await axios.get('https://www.themealdb.com/api/json/v1/1/list.php?a=list')
             setCountry(respCountry.data.meals);
-            console.log(respCountry.data.meals)
         }
         getCountryData();
     }, []);
@@ -22,8 +21,6 @@ const FilterCountry = ({ setFiltered, recip }) => {
             key.strArea?.includes(countryName));
 
         setFiltered(filtering);
-        console.log(filtering);
-        console.log(countryName)
     }, [countryName]);
 
     return (
