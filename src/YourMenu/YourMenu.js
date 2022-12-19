@@ -1,11 +1,10 @@
 import MenuHeader from './MenuHeader';
-import MealsMenu from './MealsMenu';
 
 
 
 const YourMenu = () => {
   return (
-        <div className="Menu_container">
+        <div className="Menu_container1">
           <MenuHeader/>
         </div>    
   )

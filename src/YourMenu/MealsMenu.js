@@ -1,6 +1,7 @@
 import CardMedia from '@mui/material/CardMedia';
 import './Heart.css';
 import { FaHeart} from 'react-icons/fa';
+import {Link} from 'react-router-dom';
 
 const MealsMenu = ({recip, setSelect}) => {
     let menu=[...recip]
@@ -13,20 +14,24 @@ const MealsMenu = ({recip, setSelect}) => {
   }
  
   return (
-      <div className='meals'>
+      <div className='meals1'>
           {recip.map((key) => 
-                <div className="cardmeal">
-                <div onClick={() => OnClickHeart(key[0])}>
-                <FaHeart className='heart' />
-                </div>
-                <CardMedia className="img" key={key[0]}  
-                                component="img"
-                                src={key[2]}
-                                alt={key[1]} 
-                            />
-                <div className="content-text">
-                       <h4 className="title-meal">{key[1]}</h4>
-                </div>
+                <div className="cardmeal1">
+                    <div onClick={() => OnClickHeart(key[0])}>
+                    <FaHeart className='heart' />
+                    </div>
+                    <>
+                      <Link to="/CompleteRecipe" state={{id: `${key[0]}`}}>
+                        <CardMedia className="img1" key={key[0]}  
+                                        component="img"
+                                        src={key[2]}
+                                        alt={key[1]} 
+                                    />
+                        <div className="content-text1">
+                              <h4 className="title-meal1">{key[1]}</h4>
+                        </div>
+                      </Link>
+                    </>
                 </div>
               )}
         </div> 

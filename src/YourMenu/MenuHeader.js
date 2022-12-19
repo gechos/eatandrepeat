@@ -62,7 +62,7 @@ const MenuHeader = () => {
     }, []);
 
   return (
-    <div class="meals-container1">
+    <div class="meals-container">
         <h1><span className='principal-word'>A special day, </span>do your best</h1>
         <h1>select your favorite dishes for your menu</h1>
     <div className='categories'>
@@ -76,11 +76,11 @@ const MenuHeader = () => {
             ))}
     </div>
     <div className='meals'>
-          <button className="button-scroll" onClick={() => (page === 0 ? null : setPage(page - 1))}><ion-icon className='icon' name="chevron-back-outline"></ion-icon></button>
+          <button className="button-scroll1" onClick={() => (page === 0 ? null : setPage(page - 1))}><ion-icon className='icon' name="chevron-back-outline"></ion-icon></button>
                 {filtered.slice(page * 4, (page + 1) * 4).map((key) => 
-                        <div className="cardmeal">
+                        <div className="cardmeal1">
                             <Heart recip={filtered} select={select} setSelect={setSelect} id={key.idMeal} meal={key.strMeal} img={key.strMealThumb}/>
-                            <CardMedia className="img" key={key.idMeal} 
+                            <CardMedia className="img1" key={key.idMeal} 
                                 component="img"
                                 src={key.strMealThumb}
                                 alt={key.strMeal}
@@ -94,7 +94,7 @@ const MenuHeader = () => {
     </div>
     <h1>Recipes from your special menu </h1>
     <div>
-        <button className='btn' onClick={handleOnClick}>Printer select</button>
+        {/*<button className='btn' onClick={handleOnClick}>Printer select</button>*/}
     </div>
     <MealsMenu recip={select} setSelect={setSelect}/>
     {print ? <MenuPrint select={select} /> : null}
