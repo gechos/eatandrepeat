@@ -18,8 +18,8 @@ const MenuPrint = ({select}) => {
     <>
       <div className='meals'>
         <div ref={componentRef} style={{width: '100%', height: window.innerHeight}}>
-          {select.map((key) => 
-              <Link to="/CompleteRecipe" key={key[0]} state={id: {key[0]}}/>
+          {select.map((key) => key[0]
+              /*<Link to="/CompleteRecipe" key={key[0]} state={id: {key[0]}}/>*/
               )}
         </div>
       </div>

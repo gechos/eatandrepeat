@@ -1,4 +1,4 @@
-import CardMenu from "./CardMenu";
+import CardMedia from '@mui/material/CardMedia';
 import './Heart.css';
 import { FaHeart} from 'react-icons/fa';
 
@@ -19,13 +19,15 @@ const MealsMenu = ({recip, setSelect}) => {
                 <div onClick={() => OnClickHeart(key[0])}>
                 <FaHeart className='heart' />
                 </div>
-                <CardMenu className="meal"
-                    key={key[0]} 
-                    img={key[2]} 
-                    meal={key[1]} 
-                    />
+                <CardMedia className="img" key={key[0]}  
+                                component="img"
+                                src={key[2]}
+                                alt={key[1]} 
+                            />
+                <div className="content-text">
+                       <h4 className="title-meal">{key[1]}</h4>
                 </div>
-               
+                </div>
               )}
         </div> 
 )
