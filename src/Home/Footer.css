@@ -1,11 +1,12 @@
 .foot {
-    height: 200px;
+    height: auto;
     width: 100vw;
     background: no-repeat center center fixed;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 40px;
 }
 
 .overlay1 {
@@ -17,6 +18,15 @@
     justify-content: space-around;
     align-items: center;
     border-radius: 16px;
+}
+
+@media (max-width: 1000px){
+    .overlay1{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 200px;
+    }
 }
 
 .btn {
@@ -65,6 +75,8 @@
 .title-footer {
     background: none;
     color: #FFFFFF;
+    width: auto;
+    height: auto;
 }
 
 .title-subtitle1 {
