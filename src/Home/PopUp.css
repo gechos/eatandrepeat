@@ -14,7 +14,7 @@
     padding: 15px;
     margin: 5px;
     border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.47) 0px 1px 60px;
+    box-shadow: rgba(0, 0, 0, 0.245) 0px 1px 60px;
     width: 350px;
     height: 480px;
     transition: all 0.2s ease-in-out;
@@ -31,6 +31,7 @@
 
 .title-popup {
     background: none;
+    margin-bottom: 4px;
 }
 
 .ingredients-popup{
@@ -72,6 +73,7 @@
 }
 
 .container-ingredients{
-    background-color: #ffcb634f;
+    background-color: #ffcb6334;
     border-radius: 16px;
+    padding: 8px;
 }

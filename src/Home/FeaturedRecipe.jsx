@@ -17,7 +17,9 @@ export default function FeaturedRecipe(props) {
                 <div className="recipe_p">
                     <p>{props.description}</p>
                 </div>
-                <button className='btn'>Details</button>
+                <div>
+                    <button className='btn'>Details</button>
+                </div>
             </div>
         </div>
     );

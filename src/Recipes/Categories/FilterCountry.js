@@ -25,7 +25,7 @@ const FilterCountry = ({ setFiltered, recip }) => {
 
     return (
         <div className='filter'>
-            <h4>Countries</h4>
+            <h4 className='filter-title'>Countries</h4>
             <div className='filter-container'>
                 <select className='filter-box' onChange={(e) => setCountryName(e.target.value)} name="ingredient">
                     <option className='option'>Countries</option>

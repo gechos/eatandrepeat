@@ -64,7 +64,7 @@ const FilterIngredient = ({ setFiltered, recip }) => {
 
   return (
     <div className='filter'>
-      <h4>Ingredients</h4>
+      <h4 className='filter-title'>Ingredients</h4>
       <div className='filter-container'>
         <select className='filter-box' onChange={(e) => setIngredientName(e.target.value)} name="ingredient">
           <option className='option'>Ingredients</option>

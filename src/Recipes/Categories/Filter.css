@@ -1,18 +1,20 @@
 .filter{
     margin-top: 20px;
+    line-height: 0px;
 }
 
 .option{
     color: black;
+    padding-right: 8px;
 }
 
 .filter-box{
-    border: none;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-    padding: 8px;
-    border-radius: 8px;
+    border: solid 1px rgb(199, 199, 199);
+    padding: 4px;
+    border-radius: 4px;
 }
 
-.filter-container{
-    height: 40px;
+.filter-title{
+    color: #d39b2c;
+    font-size: 13px;
 }
