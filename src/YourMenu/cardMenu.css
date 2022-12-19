@@ -10,6 +10,7 @@
 
 .title-meal1{
     overflow: hidden;
+    height: 19px;
 }
 
 .paragraph1{
@@ -40,4 +41,9 @@
 
 .cardmeal1:hover{
     transform: scale(1.1);
+}
+
+.sentence{
+    color: #d6a442;
+    margin-top: 52px;
 }
