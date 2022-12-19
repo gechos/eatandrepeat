@@ -1,9 +1,14 @@
 import '././card.css'
 import CardMedia from '@mui/material/CardMedia';
+import {Link} from 'react-router-dom';
+
 
 
 export default function MediaCard(props) {
     return (
+         
+        <>
+        <Link to="/CompleteRecipe" state={{id: `${props.id}`}}>
         <div className="cardmeal">
             <CardMedia className="img"
                 component="img"
@@ -16,6 +21,11 @@ export default function MediaCard(props) {
                 <p className="paragraph">{props.description}</p>
             </div>
         </div>
+        </Link>
+        </>
+        
+        
+         
     );
 }
 

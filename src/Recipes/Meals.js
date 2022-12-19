@@ -60,6 +60,7 @@ const Meals = () => {
                     img={key.strMealThumb} 
                     meal={key.strMeal} 
                     description={key.strInstructions} 
+                    id={key.idMeal}
                     />
               )}
     </div>

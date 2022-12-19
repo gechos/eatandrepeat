@@ -43,7 +43,8 @@ function Footer() {
                         ingredient2={randomMeal.strIngredient2}
                         ingredient3={randomMeal.strIngredient3}
                         ingredient4={randomMeal.strIngredient4}
-                        close={() => setShownPopUp()} />
+                        close={() => setShownPopUp()} 
+                        id={randomMeal.idMeal}/>
 
                 </div>
                     : null}

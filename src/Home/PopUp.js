@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import './PopUp.css';
+import {Link} from 'react-router-dom';
+
 
 function PopUp(props) {
 
@@ -20,7 +22,9 @@ function PopUp(props) {
                     <p className='ingredient-popup'><b className='ingredient-popup'>4. </b>{props.ingredient4}</p>
                 </div>
             </div>
-            <><button className="btn">Details</button></>
+            <Link to="/CompleteRecipe" state={{id: `${props.id}`}}>
+                <><button className="btn">Details</button></>
+            </Link>
         </div>
     )
 

@@ -24,6 +24,38 @@
     border: none;
 }
 
+.react-autosuggest__suggestions-list{
+    width: 195px;
+    list-style: none;
+    z-index: 1;
+    position: absolute;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#252525;
+    padding-inline-start: 0px;
+    margin-block-start: 0px;
+    margin-inline-start: 10px;
+    border-radius: 5px;
+}
+
+.react-autosuggest__suggestions-container{
+    border-radius: 5px;
+    border-color: black;
+}
+
+.suggestion {
+    padding: 3px 15px;
+}
+
+.suggestion:hover{
+    background-color: #ffecc5;
+}
+
+li:hover{
+    background-color:#ffecc5;
+}
+ 
+
 
 /* .search-button {
     font-size: 16px;

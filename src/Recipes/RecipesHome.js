@@ -38,7 +38,7 @@ const RecipesHome = () => {
         <div className="meals-container">
             <div className='meals'>
                 <button className="button-scroll" onClick={() => (page == 0 ? null : setPage(page - 1))}><ion-icon className='icon' name="chevron-back-outline"></ion-icon></button>
-                {meal.slice(page * 4, (page + 1) * 4).map((key) => <MediaCard className="meal" key={key.idMeal} img={key.strMealThumb} meal={key.strMeal} description={key.strInstructions} />)}
+                {meal.slice(page * 4, (page + 1) * 4).map((key) => <MediaCard className="meal" key={key.idMeal} img={key.strMealThumb} meal={key.strMeal} description={key.strInstructions} id={key.idMeal}/>)}
                 <button id='btn-right' className="button-scroll" onClick={() => (page == 7 ? null : setPage(page + 1))}><ion-icon className='icon' name="chevron-forward-outline"></ion-icon></button>
             </div>
             <button onClick={navigateToMeals} className='btn'>See More</button>

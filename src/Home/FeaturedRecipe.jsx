@@ -1,4 +1,6 @@
 import "./FeaturedRecipe.css";
+import {Link} from 'react-router-dom';
+
 
 export default function FeaturedRecipe(props) {
     return (
@@ -17,7 +19,9 @@ export default function FeaturedRecipe(props) {
                 <div className="recipe_p">
                     <p>{props.description}</p>
                 </div>
-                <button className='btn'>Details</button>
+                <Link to="/CompleteRecipe" state={{id: `${props.id}`}}>
+                    <button className='btn'>Details</button>
+                </Link>
             </div>
         </div>
     );

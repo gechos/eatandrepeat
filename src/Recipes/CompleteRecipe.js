@@ -19,9 +19,6 @@ export default function CompleteRecipe() {
       }, [])  
   
 
-    console.log(meal);
-    console.log(meal[0].strMeal);
-
  return (
        <div className="CompleteRecipe_container">
            <div className="CompleteRecipe_text">

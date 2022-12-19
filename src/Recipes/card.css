@@ -10,6 +10,7 @@
 
 .title-meal{
     overflow: hidden;
+    color: black;
 }
 
 .paragraph{
@@ -40,4 +41,12 @@
 
 .cardmeal:hover{
     transform: scale(1.1);
+}
+
+.read-more {
+    font-size: 20px;
+}
+
+a:-webkit-any-link{
+    text-decoration: none;
 }
