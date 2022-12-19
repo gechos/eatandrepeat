@@ -70,11 +70,11 @@ const MenuHeader = () => {
                 ))}
         </div>
         <div className='meals'>
-            <button className="button-scroll1" onClick={() => (page === 0 ? null : setPage(page - 1))}><ion-icon className='icon' name="chevron-back-outline"></ion-icon></button>
+            <button className="button-scroll" onClick={() => (page === 0 ? null : setPage(page - 1))}><ion-icon className='icon' name="chevron-back-outline"></ion-icon></button>
                     {filtered.slice(page * 4, (page + 1) * 4).map((key) => 
-                            <div className="cardmeal11">
+                            <div className="cardmeal1">
                                 <Heart recip={filtered} select={select} setSelect={setSelect} id={key.idMeal} meal={key.strMeal} img={key.strMealThumb}/>
-                                <CardMedia className="img11" key={key.idMeal} 
+                                <CardMedia className="img1" key={key.idMeal} 
                                     component="img"
                                     src={key.strMealThumb}
                                     alt={key.strMeal}
