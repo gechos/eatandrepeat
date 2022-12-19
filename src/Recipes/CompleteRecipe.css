@@ -40,6 +40,9 @@ h3 {
     font-family: 'Times New Roman', Times, serif;
 }
 
+.complete-recipe-title{
+    color: #d6a442;
+}
 
 
 .ingredients{
@@ -51,8 +54,10 @@ h3 {
 }
 
 .recipe-image{
-   border-radius: 8px 8px 0 0;
+   border-radius: 16px;
    box-shadow: inset rgb(0 0 0 / 20%) 0 64px 64px 16px;
+   width: 500px;
+   height: 500px;
 }
 
 .recipe_btn{
@@ -61,3 +66,14 @@ h3 {
     justify-content:space-between;
 }
 
+.complete-recipe-container{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+}
+
+.right-content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+}
