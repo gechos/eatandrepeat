@@ -1,0 +1,67 @@
+*{
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 150px;
+    padding-top: 100px;
+}
+
+.title{
+    line-height: 24px;
+}
+
+.principal-word{
+    color: #a87000;
+}
+
+.left-container{
+    padding-right: 60px;
+    line-height: 24px;
+}
+
+.p{
+    width: 500px;
+    font-size: 16px;
+    color: rgb(145, 145, 145);
+}
+
+.principal-img{
+    padding-left: 10px;
+}
+
+.btn {
+    font-size: 16px;
+    width: 100px;
+    border: none;
+    background-color: initial;
+    background-image: linear-gradient(-180deg, #e3ac3d, #a87000);
+    border-radius: 6px;
+    box-shadow: #fff2d9 0 2px 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter, -apple-system, system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
+    height: 40px;
+    line-height: 40px;
+    outline: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    position: relative;
+    text-align: center;
+    vertical-align: top;
+    white-space: nowrap;
+    z-index: 9;
+    border: 0;
+    transition: box-shadow .2s;
+    font-weight: 500;
+}
+
+.btn:hover {
+    box-shadow: #ffe4b1 0 3px 8px;
+}
