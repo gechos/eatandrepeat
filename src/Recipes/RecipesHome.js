@@ -2,7 +2,7 @@ import MediaCard from './cardItem'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import './RecipesHome.css'
-import {Routes, Route, useNavigate} from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
 
 const RecipesHome = () => {
     const [meal, setMeal] = useState([])
