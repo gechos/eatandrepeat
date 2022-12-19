@@ -6,6 +6,7 @@ import CardMedia from '@mui/material/CardMedia';
 import {Heart} from './Heart';
 import MenuPrint from "./MenuPrint";
 import './cardMenu.css'
+import HeaderYourMenu from "./HeaderYourMenu";
 
 
 
@@ -63,8 +64,7 @@ const MenuHeader = () => {
 
   return (
     <div class="meals-container1">
-        <h1><span className='principal-word'>A special day, </span>do your best</h1>
-        <h1>select your favorite dishes for your menu</h1>
+        <HeaderYourMenu />
     <div className='categories'>
             {categories.map(category => (
                 <button onClick={ ()=> handleOnClickItem(category.strCategory)} className='btn-category'>
@@ -78,15 +78,15 @@ const MenuHeader = () => {
     <div className='meals'>
           <button className="button-scroll" onClick={() => (page === 0 ? null : setPage(page - 1))}><ion-icon className='icon' name="chevron-back-outline"></ion-icon></button>
                 {filtered.slice(page * 4, (page + 1) * 4).map((key) => 
-                        <div className="cardmeal">
+                        <div className="cardmeal1">
                             <Heart recip={filtered} select={select} setSelect={setSelect} id={key.idMeal} meal={key.strMeal} img={key.strMealThumb}/>
-                            <CardMedia className="img" key={key.idMeal} 
+                            <CardMedia className="img1" key={key.idMeal} 
                                 component="img"
                                 src={key.strMealThumb}
                                 alt={key.strMeal}
                             />
-                            <div className="content-text">
-                                <h4 className="title-meal">{key.strMeal}</h4>
+                            <div className="content-text1">
+                                <h4 className="title-meal1">{key.strMeal}</h4>
                             </div>
                         </div>
                 )}
