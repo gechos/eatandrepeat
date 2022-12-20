@@ -12,7 +12,7 @@ const Header = () => {
   };
 
   return (
-    <div className='header'>
+    <div className='header3'>
       <div className='left-container'>
         <div className='title'>
           <h1 className='title-header'><span className='principal-word'>No more excuses, </span>make the best</h1>
@@ -21,9 +21,7 @@ const Header = () => {
         <p className='p'>At Eat&Repeat you will find the best dishes. You can search recipes from all around the world, either by categories, countries or ingredients.</p>
         <button onClick={navigateToMeals} className='btn'>¡Let's Go!</button>
       </div>
-      <div>
-        <img className='principal-img' src={image} alt="food"></img>
-      </div>
+      <img className='principal-img' src={image} alt="food"></img>
     </div>
   )
 }

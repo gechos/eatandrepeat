@@ -27,8 +27,8 @@ export default function CompleteRecipe() {
 
 
           <div className='complete-recipe-container'>
-            <div className='left content'>
-              <img className='recipe-image' src={meal[0].strMealThumb} />
+            <div className='left-content'>
+              <img className='recipe-image' alt='recipe' src={meal[0].strMealThumb} />
             </div>
             <div className='right-content'>
               <h2 className="complete-recipe-title">{meal[0].strMeal}</h2>
